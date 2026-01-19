@@ -24,6 +24,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import lnpLogo from "@/assets/lnp-logo.jpg";
 
 interface NavItemProps {
   icon: React.ElementType;
@@ -99,6 +100,18 @@ interface SidebarProps {
 export function Sidebar({ activeView, onViewChange, onUploadClick }: SidebarProps) {
   return (
     <aside className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col h-full">
+      {/* Logo */}
+      <div className="p-4 border-b border-sidebar-border">
+        <div className="flex items-center gap-3">
+          <img 
+            src={lnpLogo} 
+            alt="Liberia National Police" 
+            className="h-12 w-auto object-contain"
+          />
+        </div>
+        <p className="text-xs text-sidebar-foreground/60 mt-2">Document Management System</p>
+      </div>
+
       {/* Upload Button */}
       <div className="p-4">
         <Button

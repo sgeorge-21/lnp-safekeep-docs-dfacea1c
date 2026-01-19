@@ -1,4 +1,4 @@
-import { Bell, Search, User, Shield } from "lucide-react";
+import { Bell, Search, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -19,19 +19,11 @@ export function Header({ onSearch }: HeaderProps) {
   return (
     <header className="bg-gradient-header border-b border-navy-light/20 px-6 py-3">
       <div className="flex items-center justify-between">
-        {/* Logo & Title */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gold">
-            <Shield className="w-6 h-6 text-navy-dark" />
-          </div>
-          <div>
-            <h1 className="text-lg font-semibold text-primary-foreground">
-              LNP Document Management
-            </h1>
-            <p className="text-xs text-primary-foreground/70">
-              Liberia National Police
-            </p>
-          </div>
+        {/* Page Title */}
+        <div>
+          <h1 className="text-lg font-semibold text-primary-foreground">
+            Document Management System
+          </h1>
         </div>
 
         {/* Search Bar */}
